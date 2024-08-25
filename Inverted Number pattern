@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();  // Read an integer input from the user
+
+        for (int i = n; i >= 0; i--) {  // Outer loop: starts from n and decrements to 0
+            for (int j = 1; j <= i; j++) {  // Inner loop: prints numbers from 1 to i
+                System.out.print(j + " ");  // Print the number followed by a space
+            }
+            System.out.println();  // Move to the next line after each row
+        }
+    }
+}
